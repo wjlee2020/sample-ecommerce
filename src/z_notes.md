@@ -33,3 +33,7 @@ Get the JSON data with the photos information from the API and save it to contex
    https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json
 
 2. Save the array of data that comes back to state.
+
+# Step 5
+
+Using the data in context state, map over it in the Photos page and display the images.
