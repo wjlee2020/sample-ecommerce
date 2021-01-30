@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import {getAllPhotos} from './utils/fetchService';
+import { getAllPhotos } from './utils/fetchService';
 
 const Context = React.createContext();
 
-function ContextProvider({children}) {
+function ContextProvider({ children }) {
     const [allPhotos, setAllPhotos] = useState([]);
 
     useEffect(() => {
@@ -32,4 +32,4 @@ function ContextProvider({children}) {
     )
 }
 
-export {ContextProvider, Context }
+export { ContextProvider, Context }
