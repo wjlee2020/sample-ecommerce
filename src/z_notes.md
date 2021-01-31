@@ -52,18 +52,18 @@ On the Image component, track the hover state
 Conditionally render the heart and plus icons when an Image component is being hovered on
 
 1. Icon to render for the heart:
-<i className="ri-heart-line favorite"></i>
+   <i className="ri-heart-line favorite"></i>
 
 2. Icon to render for the plus:
-<i className="ri-add-circle-line cart"></i>
+   <i className="ri-add-circle-line cart"></i>
 
 # Step 8
 
 Add ability to toggle an image's `isFavorited` property by clicking the heart icon (filled heart doesn't need to display on the image yet)
 
 1. Add a toggleFavorite method to context. It should take an `id` parameter and update the array of allPhotos by flipping the `isFavorited` property of the photo with the matching `id`
-    a. Have this function also console.log something so we know it's running correctly
-    b. Don't try to modify the individual image object only. Make sure to provide a whole new array to context with the one item with the matching `id` being changed.
+   a. Have this function also console.log something so we know it's running correctly
+   b. Don't try to modify the individual image object only. Make sure to provide a whole new array to context with the one item with the matching `id` being changed.
 2. Make it so clicking the heart icon on any given image runs this method
 
 # Step 9
@@ -95,3 +95,4 @@ Setup context to manage items in an array called `cartItems`. This will be an ar
 1. Add the `cartItems` state to context. (Array)
 2. Add function to add an image to the cart. (Takes the full image object as parameter)
 3. Make it so clicking the plus icon on the image adds the item to the cart. (Console.log the cart items array to see that it's working)
+

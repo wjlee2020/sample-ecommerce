@@ -19,22 +19,19 @@ function ContextProvider({ children }) {
     }
 
     function toggleFavorite(id) {
-        const updatedPhotosArr = allPhotos.map(photo => {
-            if (photo.id === id) {
-                // console.log(photo.id)
-                // console.log(!photo.isFavorite)
-                return {
-                    ...photo, isFavorite: !photo.isFavorite
-                }
+        const updatedPhotoArr = allPhotos.map(photo => {
+            if(photo.id === id) {
+                console.log(id)
+                console.log(!photo.isFavorite)
+                return {...photo, isFavorite: !photo.isFavorite}
             }
             return photo
         })
-        setAllPhotos(updatedPhotosArr);
-        // console.log("hello")
+        setAllPhotos(updatedPhotoArr)
     }
 
     return (
-        <Context.Provider value={{ allPhotos, toggleFavorite }}>
+        <Context.Provider value={{allPhotos, toggleFavorite}}>
             {children}
         </Context.Provider>
     )
