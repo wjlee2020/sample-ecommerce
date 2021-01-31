@@ -15,18 +15,15 @@ function ContextProvider({ children }) {
     }, [])
 
     function toggleFavorite(id) {
-        const updatedPhotosArr = allPhotos.map(photo => {
+        const updatedPhotoArr = allPhotos.map(photo => {
             if (photo.id === id) {
-                // console.log(photo.id)
-                // console.log(!photo.isFavorite)
-                return {
-                    ...photo, isFavorite: !photo.isFavorite
-                }
+                console.log(id)
+                console.log(!photo.isFavorite)
+                return { ...photo, isFavorite: !photo.isFavorite }
             }
             return photo
         })
-        setAllPhotos(updatedPhotosArr);
-        // console.log("hello")
+        setAllPhotos(updatedPhotoArr)
     }
 
     function addCartItem(newCartitem) {
