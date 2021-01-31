@@ -65,3 +65,34 @@ Add ability to toggle an image's `isFavorited` property by clicking the heart ic
    a. Have this function also console.log something so we know it's running correctly
    b. Don't try to modify the individual image object only. Make sure to provide a whole new array to context with the one item with the matching `id` being changed.
 2. Make it so clicking the heart icon on any given image runs this method
+
+# Step 9
+
+Make the image display the filled heart icon when it's already favorited
+
+Logic to follow:
+* If the image is favorited, display the filled heart icon always
+* Otherwise, if the image being hovered on, display the heart outline instead
+* If it isn't favorited OR hovered on, don't display anything
+
+Remember to make it so clicking the filled heart icon ALSO runs the toggleFavorite function!
+
+Filled heart icon:
+<i className="ri-heart-fill favorite"></i>
+
+# Step 10
+
+Add propTypes to the Image component
+
+1. className should be a string
+2. img should be an object, specifically an object with `id`, `url`, and `isFavorite` properties
+https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
+
+# Step 11
+
+Setup context to manage items in an array called `cartItems`. This will be an array of image objects.
+
+1. Add the `cartItems` state to context. (Array)
+2. Add function to add an image to the cart. (Takes the full image object as parameter)
+3. Make it so clicking the plus icon on the image adds the item to the cart. (Console.log the cart items array to see that it's working)
+
