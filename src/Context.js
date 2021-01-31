@@ -5,6 +5,7 @@ const Context = React.createContext();
 
 function ContextProvider({ children }) {
     const [allPhotos, setAllPhotos] = useState([]);
+    const [cartItems, setCartItems] = useState([]);
 
     useEffect(() => {
         getAllPhotos()
@@ -12,6 +13,10 @@ function ContextProvider({ children }) {
                 setAllPhotos(respData);
             })
     }, [])
+
+    function addCartItem(img) {
+        setCartItems(img);
+    }
 
     function toggleFavorite(id) {
         const updatedPhotosArr = allPhotos.map(photo => {
