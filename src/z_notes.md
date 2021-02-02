@@ -111,3 +111,50 @@ https://stackoverflow.com/a/8217584
 # Step 12.5
 
 Make it so clicking the little shopping cart icon on the image removes the item from the cart
+
+# Step 13
+
+Change the cart icon in the header to display the full cart icon if there are any items in the cart
+
+Full class name to use WHEN ITEMS IN CART:
+"ri-shopping-cart-fill ri-fw ri-2x"
+
+Full class name to use WHEN CART IS EMPTY:
+"ri-shopping-cart-line ri-fw ri-2x"
+
+# Step 14
+
+Make it so clicking the trash icon on the Cart page removes that item from the cart
+
+# Step 15
+
+Calculate the total cost of the items in the cart and display it on the Cart page
+
+1. Usually the item in the database will have it's own cost saved, but we're assuming every item we sell costs $5.99, so you can just hard code that cost in
+2. To very easily display the total cost in US dollars (or whatever currency you want), use the following:
+
+`<number>.toLocaleString("en-US", {style: "currency", currency: "USD"})`
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString
+
+# Step 16
+
+Let our user place their order!
+
+Clicking the "Place Order" button should:
+1. Change the text to "Ordering..."
+2. Timeout for 3 seconds (to simulate an order being placed)
+3. Log "Order placed!" to the console
+4. Empty out the cart
+
+# Step 17
+
+1. Only render the "Place Order" button if there are items in the cart
+
+2. Change the trash icon to a filled-in trash icon when hovering over it
+
+Filled trash icon to use when hovering:
+<i className="ri-delete-bin-fill"></i>
+
+Empty trash icon to use when NOT hovering:
+<i className="ri-delete-bin-line"></i>
