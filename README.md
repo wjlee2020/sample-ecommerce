@@ -2,7 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-A mini E-commerce project provided by Bob Ziroll from VSchool, this taught me to use many of React's hooks like useContext and useRef, more in depth.
+A mini E-commerce project provided by Bob Ziroll from VSchool, this taught me to get more familiar with many of React's hooks like useContext and useRef, more in depth.
+It helped me gain more confidence in understanding state (and managing state)!
 
 ## What it does
 
