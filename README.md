@@ -11,4 +11,4 @@ of course, the checkout process is merely a dummy.
 
 ### demo
 
-<img src="demoGif/ezgif.com-gif-maker.gif" alt="demo gif" />
+![Sample E-Commerce Demo] (ezgif.com-gif-maker.gif)
