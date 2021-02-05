@@ -10,5 +10,4 @@ Similar to other e-commerce websites, you can favorite items, and also add them 
 of course, the checkout process is merely a dummy.
 
 ### demo
-
-![Sample E-Commerce Demo] (ezgif.com-gif-maker.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/70941958/107019257-c9c0eb00-67e4-11eb-853d-f09e08724a2f.gif)
